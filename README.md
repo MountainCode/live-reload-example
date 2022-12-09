@@ -1,3 +1,5 @@
+Testing pull requests.
+
 This is a minimal example of live reload for JavaScript.
 
 Use `npm run watch` to start the server.
