@@ -12,6 +12,7 @@ const requestListener = function(req, res) {
       res.end();
     });
   } else {
+    const x = foo;
     fs.readFile('./app/index.html', 'utf-8', (err, html) => {
       if(err) throw err;
       res.writeHead(200, {'Content-Type': 'text/html'});
@@ -21,7 +22,6 @@ const requestListener = function(req, res) {
   }
 };
 
-const server = http.createServer(requestListener);
-const port = 1337;
-server.listen(port);
-console.log(`Server is running on port ${port}`);
+const serverr = http.createServer(requestListener);
+serverr.listen(1337);
+console.log(`Server is running on port 1337`);
